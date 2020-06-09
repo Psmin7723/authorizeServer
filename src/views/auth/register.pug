@@ -1,0 +1,21 @@
+extends ../layout
+block content
+  div.logo-div
+    img.logo-image(src='/public/image/logo.png')
+    .form-group
+      label(for='regInputId') 아이디
+      input#regInputId.form-control(type='id',name='username', placeholder='아이디를 입력하세요')
+    .form-group
+      label(for='regInputPassword') 패스워드
+      input#regInputPassword.form-control(type='password', name='password', placeholder='암호')
+    .form-group
+      label(for='regInputName') 이름
+      input#regInputName.form-control(type='name',name='name', placeholder='이름을 입력하세요')
+    .form-group
+      label(for='regInputEmail') 이메일
+      input#regInputEmail.form-control(type='email', name='email', placeholder='abc@abcd.abc')
+    div.login-button-div
+      button#registerButton.btn.btn-default.login-button(type='submit') 회원가입
+        
+
+  block contents

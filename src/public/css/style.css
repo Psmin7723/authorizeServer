@@ -1,0 +1,910 @@
+body {
+  background: #F4F9FE;
+  overflow-y: auto !important;
+}
+a {
+  cursor: pointer;
+}
+ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+/******************** 동의 페이지 ****************/
+.agree-title{
+  text-align: center;
+}
+.agree-listBox {
+  text-align: center;
+  border: 1px solid #000;
+  width: 68%;
+  margin: 0 auto;
+  height: 80px;
+}
+.agree-listBox ul{
+  text-align: center;
+}
+.agree-listBox p {
+  margin-top:15px;
+}
+.agree-listBox ul li{
+  line-height: 80px;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.agreeButton {
+  top: 80px;
+  left: 10%;
+  position: absolute;
+  font-size: 20px;
+  padding:0;
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: 0;
+  width:100px;
+  height: 50px;
+  font-weight: 700;
+}
+.agreeButton:hover {
+  background-color: #eee;
+}
+.noAgreeButton:hover {
+  background-color: #eee;
+}
+.noAgreeButton {
+  font-weight: 700;
+  top: 80px;
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  width:100px;
+  height: 50px;
+  padding:0;
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: 0;
+}
+.agree-buttonBox {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+/********************* 메인 *********************/
+.main-title h2 {
+  text-align: center;
+}
+.main-button{
+  margin-top: 100px;
+}
+.main-button form {
+  display: inline-block;
+  text-align: center;
+
+}
+.loginForm{
+  width:20%;
+  margin-left: 30%;
+}
+.regForm{
+  width:20%;
+  margin-right: 30%;;
+}
+.main-button form button {
+  font-size: 25px;
+  padding:10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: 0;
+}
+/***************** 인증 등록 페이지 ***************/
+.regIdlabel{
+  display: block;
+}
+.regSecretlabel{
+  display: block;
+}
+#regInputClientId {
+  width: 80%;
+  display: inline-block;
+}
+#regInputClientSecret {
+  width: 80%;
+  display: inline-block;
+}
+.checkBoxForm {
+  text-align: center;
+}
+.copyButton {
+  width: 18%;
+  margin: 0 0 0 2%;
+}
+.checkBoxForm label {
+  width:45px;
+  text-align: center;
+  margin: 0 10% 0 10%;
+}
+.checkBoxForm label input {
+  margin:0 auto;
+  width:20px;
+}
+.oauth-logo-div {
+  width:50%;
+  margin:30px auto 60px auto;
+  position: relative;
+}
+.oauth-h1 {
+  position: absolute;
+  left:6%;
+  font-size: 50px;
+  top:7%;
+}
+.oauthReg-button {
+  margin-top:30px;
+}
+.oauth-logo-div .form-group p {
+  font-weight: 700;
+}
+.oauth-button-div {
+  text-align: center;
+}
+.oauth-button-div {
+  text-align: center;
+}
+.oauth-button-div {
+  text-align: center;
+}
+.logoutForm {
+  position: absolute;
+  right:0;
+  top:-0%;
+}
+.oauth-logo-image {
+  height: 200px;
+  margin:0 0 20px 60%;
+  display: block;
+  cursor: pointer;
+}
+/********************** 로고 ***********************/
+.logo-div {
+  width:80%;
+  margin:20px auto 0px auto;
+}
+.login-button-div {
+  text-align: center;
+}
+.logo-image {
+  height: 250px;
+  margin:0 auto;
+  display: block;
+  cursor: pointer;
+}
+.login-button {
+  display: inline-block;
+  margin: 1%;
+}
+.login-oauth-button {
+  display: inline-block;
+  margin: 1%;
+}
+/********************** 탑바 *****************************/
+.top-bar{
+  height: 100px;
+  background: #0062B3;
+  position: relative;
+}
+/********************* 탑바 로고 **************************/
+.navbar-logo-image {
+  height: 100%;
+  cursor: pointer;
+}
+.logo-image-div {
+  position: absolute;
+  cursor: pointer;
+  right:50%;
+  top:50%;
+  height: 100%;
+  transform: translate(50%,-50%);
+}
+/********************** 메뉴 버튼 ******************/
+#nav-mainTab {
+  background: #0062B3;
+  margin-top:-1px;
+}
+#nav-mainTab li {
+  position: relative;
+}
+#nav-mainTab li a{
+  color:#fff;
+  margin-bottom:5px;
+}
+.navbar-circle-alram {
+  position: absolute;
+  top: -16px;
+  right: -4px;
+  height: 56px;
+}
+.navbar-number-alram {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+}
+/******************** 가로바 ********************/
+
+#nav-mainTab li.active div {
+  position: absolute;
+  background: #FFB836;
+  width:100%;
+  height: 6px;
+  transform: translate(0, -6px);
+}
+#nav-mainTab li a:focus {
+  background:none;
+}
+#nav-mainTab li a:hover {
+  background:none;
+}
+#nav-mainTab li:hover div {
+  position: absolute;
+  background: #FFB836;
+  width:100%;
+  height: 6px;
+  transform: translate(0, -6px);
+}
+/********************** 로그아웃버튼 ***********************/
+.logout-button {
+  position: absolute;
+  cursor: pointer;
+  right:3%;
+  top:50%;
+  transform: translate(-3%,-50%);
+}
+.logout-button input {
+  background: #FFB836;
+  color:#fff;
+  font-weight: 700;
+}
+/************ 로고 & 파비콘탭 ***************/
+#logoTab div {
+  margin: 30px auto 15px auto;
+  width: 85%;
+  position: relative;
+  height: 150px;
+}
+#logoTab div label {
+  position: absolute;
+  top:25%;
+  transform: translate(0, -25%);
+}
+#logoTab .uploadInput {
+  width:50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#logoTab div p {
+  position: absolute; 
+  top: 75%;
+  transform: translate(0, -75%);
+}
+#logoTab div img {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-30%, -50%);
+  height: 100px;
+}
+#logoTab div .btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  color:#fff;
+  background:#0062B3;
+}
+ 
+/************ 이미지탭 ***************/
+#imageTab div {
+  margin: 30px auto 15px auto;
+  width: 85%;
+  position: relative;
+  height: 150px;
+}
+#imageTab div label {
+  position: absolute;
+  top:25%;
+  transform: translate(0, -25%);
+}
+#imageTab .uploadInput {
+  width:50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#imageTab div p {
+  position: absolute; 
+  top: 75%;
+  transform: translate(0, -75%);
+}
+#imageTab div img {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-30%, -50%);
+  height: 100px;
+  max-width: 100px;
+}
+#imageTab div .btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  color:#fff;
+  background:#0062B3;
+} 
+
+/************ 글내용탭 ***************/
+/**** 메뉴 ****/
+#contentTab .form-box {
+  margin: 60px auto 15px auto;
+  width:88%;
+  text-align: center;
+}
+#contentTab .form-box .form-group {
+  width: 50%;
+  display: inline-block;
+}
+#contentTab .form-box .form-group .btn {
+  display: inline-block;
+  margin-left:5%;
+  margin-right:0%;
+  color:#fff;
+  background:#0062B3;
+}
+#contentTab .Input-box {
+  width:77%;
+  display: inline-block;
+}
+#contentTab div label {
+  margin-left: 4%;
+  text-align: left;
+  display: block;
+}
+/**** 타이틀 ***/
+#contentTab .form-box .form-group .textAreaBtn {
+  margin-bottom: 6%;
+}
+/************** 기타 탭 ***************/
+#footerTab > .form-group {
+  margin: 30px auto 15px auto;
+  width: 85%;
+  position: relative;
+  height: 150px;
+}
+#footerTab .footerLabel {
+  position: absolute;
+  top:25%;
+  transform: translate(0, -25%);
+}
+#footerTab .uploadInput {
+  width:50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#footerTab div p {
+  position: absolute; 
+  top: 75%;
+  transform: translate(0, -75%);
+}
+#footerTab div img {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-30%, -50%);
+  height: 100px;
+}
+#footerTab > .form-group > .btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  color:#fff;
+  background:#0062B3;
+}
+#footerTab > .form-box > .form-group > label{
+  text-align: left;
+  margin-left: 4%;
+}
+
+#footerTab .form-box {
+  margin: 60px auto 15px auto;
+  width:88%;
+  text-align: center;
+}
+#footerTab .form-box .form-group {
+  width: 50%;
+  display: inline-block;
+}
+#footerTab .form-box .form-group .btn {
+  display: inline-block;
+  margin-left:5%;
+  margin-right:0%;
+  color:#fff;
+  background:#0062B3;
+}
+#footerTab .Input-box {
+  width:77%;
+  display: inline-block;
+}
+#footerTab div label {
+  display: block;
+}
+/**** 타이틀 ***/
+#footerTab .form-box .form-group .textAreaBtn {
+  margin-bottom: 6%;
+}
+/******************* 기능관리 탭 ********************/
+#functionTab > .form-group {
+  margin: 20px auto 15px auto;
+  width: 85%;
+  position: relative;
+  height: 150px;
+}
+#functionTab .functionLabel {
+  position: absolute;
+  top:25%;
+  transform: translate(0, -25%);
+}
+#functionTab .uploadInput {
+  width:50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#functionTab .functionP {
+  position: absolute; 
+  top: 75%;
+  transform: translate(0, -75%);
+}
+#functionTab div img {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-30%, -50%);
+  height: 100px;
+}
+#functionTab .radio-inline {
+  margin:0 0 3px 3% !important;
+  display: inline-block;
+  width:13%;
+  text-align: left;
+}
+#functionTab > .form-group > .btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  color:#fff;
+  background:#0062B3;
+}
+/**************** 채팅 기능 ***************/
+#functionTab > .chat_form_group {
+  height:530px;
+}
+#functionTab > .form-group > .chatBox {
+  height: 500px;
+  width: 55%;
+  background: #B0DBFF;
+  margin: 4% 0 5% 0;
+  vertical-align: top;
+  display: inline-block;
+
+}
+#functionTab > .form-group > .waitBox {
+  height: 500px;
+  width: 100%;
+  background: #B0DBFF;
+  margin: 4% 0 5% 0;
+  display: inline-block;
+}
+.waitBox > .waitTop {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px 5px 0 0;
+  background: #0062B3;
+  margin: 10px 10px 0 10px;
+}
+.chatBox > .chatTop {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px 5px 0 0;
+  background: #0062B3;
+  margin: 10px 10px 0 10px;
+}
+
+#functionTab > .form-group > .waitBox > .waitTop > .waitName{
+  color:#fff;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin:0;
+}
+.chatBox > .chatMiddle {
+  line-height: 50px;
+  background: #fff;
+  overflow-y: auto;
+  height: 350px;
+  margin: 0px 10px 0 10px;
+  clear: both;
+  
+}
+.waitBox > .waitMiddle {
+  line-height: 50px;
+  background: #fff;
+  overflow-y: auto;
+  height: 350px;
+  margin: 0px 10px 0 10px;
+  clear: both;
+  
+}
+.chatBox > .chatMiddle > .chatMe {
+  margin: 1% 1% 2% 0;
+  width: auto;
+  max-width: 60%;
+  text-align: justify;
+  display: block;
+  float: right;
+  word-break: break-all;
+  line-height: 1.7em;
+  background: #0062B3;
+  color: #fff;
+  border-radius: 8px;
+  padding: 3px 7px 3px 8px;
+  clear: both;
+
+}
+.chatBox > .chatMiddle > .chatYou {
+  margin: 0 0 2% 1%;
+  width: auto;
+  max-width: 60%;
+  text-align: justify;
+  display: block;
+  float: left;
+  word-break: break-all;
+  line-height: 1.7em;
+  background: #E2F0FC;
+  color: #555;
+  border-radius: 8px;
+  padding: 3px 8px 3px 7px;
+  clear: both;
+}
+.chatBox > .chatBottom {
+  height: 80px;
+  border-radius: 0 0 5px 5px;
+  background: #0062B3;
+  margin: 0px 10px 0 10px;
+  position: relative;
+}
+#Input-chat {
+  height: 60px;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+}
+.Input-chat {
+  height: 60px !important;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+}
+#chatSendBtn {
+  position: absolute;
+  top: 50%;
+  background: #FFB836;
+  right: 10px;
+  transform: translate(7px, -50%);
+  color: #fff;
+  font-weight: bold;
+}
+.chatSendBtn {
+  position: absolute;
+  top: 50%;
+  background: #FFB836;
+  right: 10px;
+  transform: translate(7px, -50%);
+  color: #fff;
+  font-weight: bold;
+}
+.chatServerAlert {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  line-height: 2.1em;
+  clear: both;
+}
+.waitList {
+  background: #E2EEFD;
+  width:100%;
+  height: 35px;
+  line-height: 35px;
+}
+.waitUserList {
+  color: #555;
+  width: 65%;
+  margin: 0 0 0 3%;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.waitConnect {
+  display: inline-block;
+  width: 14%;
+  vertical-align: top;
+  margin-top: 1%;
+  padding: 3px 8px;
+  background: #0062B3;
+  color: #fff;
+}
+.waitDisconnect {
+  display: inline-block;
+  width: 14%;
+  vertical-align: top;
+  margin-top: 1%;
+  padding: 3px 8px;
+  background: #CC0600;
+  color: #fff;
+}
+/************* qr코드 *************/
+.form-group > .qrcodeBox {
+  position: relative;
+}
+.form-group > .qrcodeBox > #qrcode img{
+  
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,0);
+}
+
+/******************* 이미지 모달 ********************/
+#viewImage_modal .modal-header {
+  border-bottom: none;
+}
+#viewImage_modal .modal-footer {
+  border-top: none;
+}
+#viewImage_modal .modal-body {
+  height: 300px;
+}
+#viewImage_modal .modal-content{
+  background-color: #F4F9FE;
+}
+#viewImage_modal .imgBox {
+  width:85%;
+  margin:0 auto;
+  height: 300px;
+  position: relative;
+}
+#viewImage_modal #modalImg {
+  max-width: 100%;
+  max-height: 300px;
+  min-height: 150px;
+  position: absolute;
+  left: 50%;
+  transform:translate(-50%,0);
+}
+/************ 팝업 모달 **************/
+#viewPopup_modal .modal-backdrop {
+  background:none;
+}
+#viewPopup_modal .modal-dialog {
+  width:302px;
+  margin: 30px 15px 15px 30px;
+}
+#viewPopup_modal .modal-body {
+  padding:0;
+}
+#viewPopup_modal .modal-header .close {
+  margin-top:-8px;
+}
+#modalPopupImg {
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 400px;
+  min-height: 400px;
+}
+/************ 채팅 모달 ***************/
+.viewChatmodal {
+  width:380px;
+  height: 530px;
+  overflow-y: hidden !important;
+  
+}
+.viewChatmodal .modal-dialog {
+  width: 350px;
+}
+.viewChatmodal .chatTop {
+  cursor: move;
+}
+.viewChatmodal .modal-content {
+  background:#B0DBFF;
+  height: 500px;
+}
+.chatXbutton {
+  opacity: 1;
+}
+.chatXSpan {
+  position: absolute; 
+  top: 5%;
+  right: 5%;
+  color:#fff;
+}
+.viewChatmodal > .modal-dialog >.modal-content > .chatBox > .chatTop > .chatName{
+  color:#fff;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin:0;
+}
+/*************** 전체 타이틀 *****************/
+.titleCss {
+  height: 0 !important;
+  margin: 30px auto 15px auto!important;
+  width: 85%!important;
+  position: none !important;
+  
+}
+.titleCss h4{
+  display: inline-block;
+  font-size: 16px;
+  background: #FFB836;
+  color: #fff;
+  height: 25px;
+  line-height: 27px;
+  border-radius: 10px;
+  width: 30%;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 1280px) {
+  .oauth-h1 {
+    font-size: 40px;
+  }
+  .oauth-logo-image {
+    height: 250px;
+  }
+  .oauth-logo-div {
+    width:60%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .oauth-h1 {
+    font-size: 40px;
+  }
+  .oauth-logo-image {
+    height: 200px;
+  }
+  .oauth-logo-div {
+    width:70%
+  }
+}
+@media screen and (max-width: 768px) {
+  /************ 어플 등록페이지 *************/
+  .oauth-logo-div {
+    width:90%
+  }
+  .oauth-h1 {
+    font-size: 30px;
+  }
+  .oauth-logo-image {
+    height: 150px;
+  }
+  /************ 메뉴 *************/
+  .logout-button input {
+    font-size: 10px;
+    padding:3px 6px
+  }
+  .top-bar{
+    height: 50px;
+  }
+  #nav-mainTab li {
+    float: left;
+    width:20%;
+    margin-left:0;
+  }
+  /************ 메뉴 가로바 **************/
+  #nav-mainTab li a{
+    margin-bottom:4px;
+  }
+  #nav-mainTab li.active div {
+    height: 4px;
+    transform: translate(0, -4px);
+  }
+  #nav-mainTab li a {
+    padding:10px 0;
+    font-size: 12px;
+  }
+  
+  /********** 로고 & 파비콘 ***********/
+  #logoTab div img {
+    right: 25%;
+    transform: translate(-25%, -50%);
+    height: 30px;
+  }
+  #imageTab div img {
+    right: 25%;
+    transform: translate(-25%, -50%);
+    height: 30px;
+    max-width: 40px;
+  }
+  /************ 글내용탭 ***************/
+  #contentTab .form-box .form-group {
+    width: 100%;
+    display: block;
+  }
+  #contentTab .form-box .form-group .btn {
+    margin-left:4%;
+    margin-right: 0%;
+  }
+  #contentTab .Input-box {
+    width:78%;
+  }
+  /*********** 푸터 탭 ***************/
+  #footerTab div img {
+    right: 25%;
+    transform: translate(-25%, -50%);
+    height: 30px;
+    max-width: 40px;
+  }
+  #footerTab .form-box .form-group {
+    width: 100%;
+    display: block;
+  }
+  #footerTab .form-box .form-group .btn {
+    margin-left:4%;
+    margin-right: 0%;
+  }
+  #footerTab .Input-box {
+    width:78%;
+  }
+  /************* 기능관리 탭 ***************/
+  #functionTab div img {
+    right: 25%;
+    transform: translate(-25%, -50%);
+    height: 30px;
+    max-width: 40px;
+  }
+  #functionTab .radio-inline {
+    margin: 0px -17% 5px 22% !important;
+    display: inline-block;
+    width: 27%;
+    text-align: center;
+  }
+ 
+  /************ 이미지 모달 ************/
+  #viewImage_modal .modal-body {
+    height: 200px;
+  }
+  #viewImage_modal .imgBox {
+    height: 200px;
+  }
+  #viewImage_modal #modalImg {
+    max-height: 200px;
+    min-height: 100px;
+  }
+  /********** 전체 타이틀 **********/
+  .titleCss h4{
+    width:100%;
+  }
+}

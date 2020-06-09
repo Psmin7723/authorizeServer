@@ -1,0 +1,38 @@
+extends ../layout
+block content
+  div.oauth-logo-div
+    img.oauth-logo-image(src='/public/image/logo.png')
+    h1.oauth-h1 Application 등록
+    form.logoutForm(action="/logout", method='Post')
+      button.btn.btn-default.login-button(type='submit') 로그아웃
+    .form-group
+      label.regIdlabel(for='regInputClientId') Client ID
+      input#regInputClientId.form-control(type='name',name='name', value=client.clientId,readonly=true)
+      input.copyButton.btn.btn-default.copy-button(type='button' id='idCopy',value='복사하기')
+    .form-group
+      label.regSecretlabel(for='regInputClientSecret') Client Secret
+      input#regInputClientSecret.form-control(type='name',name='name', value=client.clientSecret, readonly=true)
+      input.copyButton.btn.btn-default.copy-button(type='button' id='secretCopy', value='복사하기')
+    .form-group
+      label(for='regInputAppName') Application Name
+      input#regInputAppName.form-control(type='name',name='name', placeholder='어플리케이션 이름를 입력하세요' value=client.appName)
+    .form-group
+      label(for='regInputHomepageAddr') Homepage Address
+      input#regInputHomepageAddr.form-control(type='url', name='url', placeholder='홈페이지 주소를 입력하세요. ' value=client.homepageAddr)
+    .form-group
+      P Check Required Information
+      .checkBoxForm
+        label(for='regInputSelectInfo1' name='labelAgreement') 아이디
+          input.form-control(type='checkbox', name='agreement', id='regInputSelectInfo1', value='username', checked)
+        label(for='regInputSelectInfo2' name='labelAgreement') 이메일
+          input.form-control(type='checkbox', name='agreement', id='regInputSelectInfo2', value='email', checked)
+        label(for='regInputSelectInfo3' name='labelAgreement') 이름
+          input.form-control(type='checkbox', name='agreement', id='regInputSelectInfo3', value='name', checked)
+    .form-group
+      label(for='regInputCallBackUrl') Authorization Callback URL
+      input#regInputCallBackUrl.form-control(type='email', name='email', placeholder='허가요청을 위한 콜백 주소를 입력하세요.' value=client.redirectUris)
+    div.oauth-button-div
+      button#oauthRegisterButton.btn.btn-default.oauthReg-button(type='submit') 등록하기
+      
+
+  block contents

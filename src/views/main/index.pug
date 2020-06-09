@@ -1,0 +1,16 @@
+extends ../layout
+block content
+  .logo-div
+    img.logo-image(src='/public/image/logo.png')
+  .main-title
+    h2 oauth2.0 테스트 서버 
+
+  .main-button
+    form.loginForm(action="/login", method='get')
+      button(type='submit') 로그인
+    
+    form.regForm(action="/register", method='get')
+      button(type='submit') 회원가입
+
+
+  block contents

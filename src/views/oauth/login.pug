@@ -1,0 +1,19 @@
+extends ../layout
+block content
+  div.logo-div
+    img.logo-image(src='/public/image/logo.png')
+    form(action=`/oauth/authorize/`, method='post')
+      .form-group
+        label(for='oauthInputId') 아이디
+        input#oauthInputId.form-control(type='id',name='username', placeholder='아이디를 입력하세요')
+      .form-group
+        label(for='oauthInputPassword') 패스워드
+        input#oauthInputPassword.form-control(type='password', name='password', placeholder='암호')
+      div.login-button-div
+        input(type='hidden',name='client_id' , value=client_id)
+        input(type='hidden',name='redirect_uri' , value=redirect_uri)
+        input(type='hidden',name='state' , value=state)
+        button#oauthLoginButton.btn.btn-default.oauthLogin-button(type='submit') 로그인
+      
+
+  block contents
