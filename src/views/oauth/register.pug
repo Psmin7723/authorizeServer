@@ -14,6 +14,10 @@ block content
       input#regInputClientSecret.form-control(type='name',name='name', value=client.clientSecret, readonly=true)
       input.copyButton.btn.btn-default.copy-button(type='button' id='secretCopy', value='복사하기')
     .form-group
+      label.regChatApiKeylabel(for='regInputChatApiKey') Chat Service Api Key
+      input#regInputChatApiKey.form-control(type='name',name='name', value=client.chatApiKey, readonly=true)
+      input.copyButton.btn.btn-default.copy-button(type='button' id='chatApiKeyCopy', value='복사하기')
+    .form-group
       label(for='regInputAppName') Application Name
       input#regInputAppName.form-control(type='name',name='name', placeholder='어플리케이션 이름를 입력하세요' value=client.appName)
     .form-group

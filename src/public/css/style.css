@@ -11,6 +11,7 @@ ul {
   padding:0;
 }
 
+
 /******************** 동의 페이지 ****************/
 .agree-title{
   text-align: center;
@@ -85,6 +86,10 @@ ul {
   text-align: center;
 
 }
+.main-alert {
+  color:red;
+  text-align: center;
+}
 .loginForm{
   width:20%;
   margin-left: 30%;
@@ -107,11 +112,18 @@ ul {
 .regSecretlabel{
   display: block;
 }
+.regChatApiKeylabel {
+  display: block;
+}
 #regInputClientId {
   width: 80%;
   display: inline-block;
 }
 #regInputClientSecret {
+  width: 80%;
+  display: inline-block;
+}
+#regInputChatApiKey {
   width: 80%;
   display: inline-block;
 }
@@ -782,7 +794,7 @@ ul {
     font-size: 40px;
   }
   .oauth-logo-image {
-    height: 250px;
+    height: 180px;
   }
   .oauth-logo-div {
     width:60%
@@ -790,10 +802,10 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .oauth-h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .oauth-logo-image {
-    height: 200px;
+    height: 150px;
   }
   .oauth-logo-div {
     width:70%
@@ -805,7 +817,7 @@ ul {
     width:90%
   }
   .oauth-h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .oauth-logo-image {
     height: 150px;

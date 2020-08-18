@@ -4,7 +4,9 @@ block content
     img.logo-image(src='/public/image/logo.png')
   .main-title
     h2 oauth2.0 테스트 서버 
-
+  - if(code === 401)
+    .main-alert
+      h4= guideMessage
   .main-button
     form.loginForm(action="/login", method='get')
       button(type='submit') 로그인

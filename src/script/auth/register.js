@@ -81,30 +81,15 @@ function registerCheck(){
         dataType: 'json',
         type: 'POST',
         data: {'username':id,'password':pw,'email':email, 'name':name},
-        success: function(result) {
-             
-          if(result.msg === true) {
+        success: function(result) {    
+          if (result.message) {
+            alert(result.message);
+            return;
+          }
+          if (result.redirect) {
+            alert('회원가입 완료!!')
             window.location.replace(result.redirect);
           }
-          if(result.msg === false && result.valid == 409){
-            alert('이미 존재하는 아이디 입니다.');
-            $('#regInputId').val('');
-            $('#regInputId').focus();
-            return;
-          }
-          if(result.msg === false && result.valid == 400){
-            alert('아이디 또는 비밀번호를 규칙에 맞게 설정해주세요.')
-            $('#regInputId').val('');
-            $('#regInputId').focus();
-            $('#regInputPassword').val('');
-            $('#regInputPassword').focus();
-            return;
-          }
-          if(result.msg === false && result.valid === 500){
-            alert('잘못된 접근입니다. 이 현상이 계속되면 관리자에게 문의해주세요.');
-            return;
-          }
-          
         }
       }); 
     } 

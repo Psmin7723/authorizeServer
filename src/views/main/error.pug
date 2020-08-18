@@ -1,0 +1,10 @@
+extends ../layout
+block content
+  .logo-div
+    img.logo-image(src='/public/image/error.png')
+  .main-alert
+      h4=`code: ${code}`
+  .main-title
+    h2 서버에서 문제가 발생하였습니다. <br> 다시 시도해주세요.
+
+  block contents

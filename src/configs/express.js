@@ -18,7 +18,7 @@ module.exports = function(express){
   app.use(helmet.xssFilter())
   app.use(cors());
   
-  const  expiryDate = new Date((Date.now() + 3600000 * 9) + 60 * 60 * 1000) // 1 hour
+  const expiryDate = new Date((Date.now() + 3600000 * 9) + 60 * 60 * 1000) // 1 hour
 
   app.use(session({
     secret: SESSION_KEY,
